@@ -12,7 +12,7 @@
     <form action="/delete" method="post">
       <div class="item">
         <input type="checkbox" name="checkbox" value="<%=item._id%>" onChange="this.form.submit()">
-        <p><%=item.name%></p>
+        <p>Item - <%=item.name%></p>
       </div>
       <input type="hidden" name="listName" value="<%= listTitle %>"></input>
     </form>
