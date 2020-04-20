@@ -38,12 +38,12 @@ app.get("/hello", (req, res) => {
   res.sendFile(path.join(__dirname, './public', 'index.html'));
 });
 
-app.get("/img", (req, res) => {
-  res.sendFile(path.join(__dirname, './public', 'img.png'));
+app.get("/img/:file", (req, res) => {
+  res.sendFile(path.join(__dirname, './public/img', req.params.file));
 });
 
-app.get("/css", (req, res) => {
-  res.sendFile(path.join(__dirname, './public/css', 'styles.css'));
+app.get("/css/:file", (req, res) => {
+  res.sendFile(path.join(__dirname, './public/css', req.params.file));
 });
 
 app.get("/", function(req, res) {
