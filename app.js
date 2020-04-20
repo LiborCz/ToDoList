@@ -38,6 +38,14 @@ app.get("/hello", (req, res) => {
   res.sendFile(path.join(__dirname, './public', 'index.html'));
 });
 
+app.get("/img", (req, res) => {
+  res.sendFile(path.join(__dirname, './public', 'img.png'));
+});
+
+app.get("/css", (req, res) => {
+  res.sendFile(path.join(__dirname, './public/css', 'styles.css'));
+});
+
 app.get("/", function(req, res) {
   res.redirect("/today");
 });
