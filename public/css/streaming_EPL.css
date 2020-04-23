@@ -3,7 +3,9 @@
   margin-bottom: 0;
 }
 
-.u-img-scale-80 {
+.hero-img {
+    display: flex;
+    justify-content: center;
     max-height: 80%;
     width: 80%;
   }
